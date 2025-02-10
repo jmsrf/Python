@@ -5,6 +5,7 @@ def factorial(user_input):
    for i in range(1, user_input):
       factorial *= i
    return factorial
+
    
 # Check that user input is correct as only non-negative integers are allowed. 
 while True:
