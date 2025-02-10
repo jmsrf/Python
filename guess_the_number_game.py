@@ -1,10 +1,12 @@
 from random import randint
 
+
 def generate_random_number():
     """Generate a random number between 1 - 10."""
     current_number = randint(1, 10)
     print(f"DEBUG: Current number is {current_number}")  # Debugging info
     return current_number # Return generated number
+
 
 def ask_for_number(current_number): 
     """
@@ -37,7 +39,8 @@ def ask_for_number(current_number):
 
         if guess_number >= 3:
             print("Maximum of 3 tries exceeded!")
-            break 
+            break
+
 
 # Generate a random number and pass it to the function
 random_number = generate_random_number() # Store the return value 
