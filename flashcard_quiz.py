@@ -33,11 +33,12 @@ def main():
 
     random.shuffle(quiz_data) # Shuffles questions
 
-    # Loop through eachquestions and check answers
+    # Loop through each question and check answers
     for question, correct_answer in quiz_data:
         user_answer, correct_answer = ask_question(question, correct_answer)  # Get the answer from the user
         check_answer(user_answer, correct_answer)  # Check the answer
-        
+
+
 # Call main function
 if __name__ == "__main__":
     main()
